@@ -1,8 +1,10 @@
+from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    dataHome = "Get data from DB: This is our Home Page"
-    return HttpResponse(dataHome)
+    return render(request, 'index.html')
+    # dataHome = "Get data from DB: This is our Home Page"
+    # return HttpResponse(dataHome)
 
 def about(request):
     dataAbout = "Get data from DB: This is our About Page"
