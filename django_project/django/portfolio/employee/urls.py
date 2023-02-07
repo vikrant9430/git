@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path("new/", views.employee),
-    path("profile/", views.profile)
+    path("this-is-employee-profile-page/", views.profile, name="profile")
 
 ]
