@@ -2,7 +2,13 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return render(request, 'index.html')
+    text = {
+        'name':"Vikrant Nandan",
+        'age':"35",
+        'mobile':"1234567890",
+        'friend_name': ['rina', 'tina', 'dina', 'pina', 'gina', 'hina']
+    }
+    return render(request, 'index.html', text)
     # dataHome = "Get data from DB: This is our Home Page"
     # return HttpResponse(dataHome)
 

@@ -6,10 +6,20 @@
 {% endblock %}
 
 {% block content %}
+{% include 'slider.html' %}
 
 <div class="jumbotron">
   <h1 style="text-align:center">Home Page</h1>
 
+<p>Name : {{name}}</p>
+<p>Name : {{age}}</p>
+<p>Name : {{mobile}}</p>
+
+<ul class="list">
+  {% for row in friend_name %}
+  <li class = "list-items">{{ row }}</li>
+  {% endfor %}
+</ul>
 </div>
 
 {% endblock %}
