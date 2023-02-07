@@ -7,9 +7,11 @@ def home(request):
     # return HttpResponse(dataHome)
 
 def about(request):
-    dataAbout = "Get data from DB: This is our About Page"
-    return HttpResponse(dataAbout)
+    return render(request, 'about.html')
+    # dataAbout = "Get data from DB: This is our About Page"
+    # return HttpResponse(dataAbout)
 
 def contact(request):
-    dataContact = "Get data from DB: This is our Contact Page."
-    return HttpResponse(dataContact)
+    return render(request, 'contact.html')
+    # dataContact = "Get data from DB: This is our Contact Page."
+    # return HttpResponse(dataContact)
